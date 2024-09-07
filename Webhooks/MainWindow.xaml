@@ -1,0 +1,47 @@
+﻿<Window x:Class="Webhooks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Webhooks"
+        mc:Ignorable="d"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="NoResize"
+        Title="Webhook Manager" Height="150" Width="300"
+        FontSize="24">
+    <Grid>
+        <StackPanel 
+            Orientation="Vertical" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <TextBox
+                Name="Message" 
+                Width="250" 
+                Height="40" 
+                Text="Enter Message here" 
+                HorizontalContentAlignment="Center" 
+                VerticalContentAlignment="Center"
+                Margin="0,0,0,10"/>
+            <StackPanel
+                Orientation="Horizontal"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <Button
+                    Name="settingsButton"
+                    Content="URL"
+                    Width="100"
+                    Height="40"
+                    Click="openSettings"
+                    Margin="0,0,10,0"/>
+                <Button
+                    Name="sendButton"
+                    Content="Send"
+                    Width="100"
+                    Height="40"
+                    Click="sendMessage"/>
+            </StackPanel>
+            
+            
+        </StackPanel>
+    </Grid>
+</Window>
